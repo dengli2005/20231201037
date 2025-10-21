@@ -1,0 +1,58 @@
+* { box-sizing: border-box; }
+
+:root {
+  --text: #111;
+  --btn-bg: #eee;
+  --btn-bg-hover: #e2e2e2;
+  --btn-border: #bbb;
+}
+
+body {
+  margin: 24px 32px;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--text);
+  background: #fff;
+}
+
+.container {
+  max-width: 800px;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 1;
+  margin: 0 0 16px 0;
+  font-weight: 700;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.tab-btn {
+  padding: 6px 12px;
+  border: 1px solid var(--btn-border);
+  border-radius: 4px;
+  background: var(--btn-bg);
+  color: #222;
+  cursor: pointer;
+}
+
+.tab-btn:hover {
+  background: var(--btn-bg-hover);
+}
+
+.tab-btn:focus {
+  outline: none;
+}
+
+.tab-btn.active {
+  background: #ddd;
+}
+
+.content {
+  line-height: 1.6;
+  font-size: 18px;
+}
